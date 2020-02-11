@@ -601,16 +601,23 @@ Smartphone Compatible web template" />
           <div class="clearfix"> </div>
         </div>
         <div class="col-md-6 mail_right">
-          <form action="#" method="post">
-            <input type="text" name="Name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}"
-              required="">
-            <input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"
-              required="">
-            <input type="text" name="Mobile number" value="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}"
-              required="">
-            <textarea name="Message..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
-            <input type="submit" value="Send">
-
+          <form
+          action="https://formspree.io/FORM_ID"
+          method="POST">
+          <label>
+            Your Name:
+            <input type="text" name="name">
+          </label>
+          <label>
+            Your Email:
+            <input type="email" name="_replyto">
+          </label>
+          <label>
+            Message:
+            <textarea name="message"></textarea>
+          </label>                       
+          <input type="submit" value="Send">
+        </form>
           </form>
         </div>
         <div class="clearfix"></div>
